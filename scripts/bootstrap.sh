@@ -2,7 +2,7 @@
 set -euo pipefail
 
 HOST=${1:?"Usage: $0 <hostname>"}
-REPO=${2:-"https://github.com/cyril-sch/nixos-server-template"}
+REPO=${2:-"https://github.com/cyril-sch/nixos-server"}
 
 echo "==> Bootstrap NixOS pour l'hôte : $HOST"
 
