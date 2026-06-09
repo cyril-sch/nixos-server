@@ -7,7 +7,7 @@ REPO=${2:-"https://github.com/cyril-sch/nixos-server-template"}
 echo "==> Bootstrap NixOS pour l'hôte : $HOST"
 
 # 1. Cloner le template
-nix-shell -p git --run "git clone $REPO /tmp/nixos-config"
+git clone $REPO /tmp/nixos-config
 cd /tmp/nixos-config
 
 # 2. Partitionner avec disko
