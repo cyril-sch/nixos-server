@@ -12,7 +12,7 @@ cd /tmp/nixos-config
 
 # 2. Partitionner avec disko
 echo "==> Partitionnement via disko..."
-nix run github:nix-community/disko -- \
+nix --extra-experimental-features "nix-command flakes" run github:nix-community/disko -- \
   --mode disko \
   ./hosts/$HOST/disk.nix
 
